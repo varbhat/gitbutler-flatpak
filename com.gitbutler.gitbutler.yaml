@@ -110,6 +110,6 @@ modules:
       - cargo --offline fetch --manifest-path Cargo.toml --verbose
       - cargo --offline build --release --verbose
      # - install -Dm644 -t /app/share/metainfo/ com.gitbutler.gitbutler.appdata.xml
-      - install -Dm755 -t /app/bin/ src-tauri/target/release/gitbutler-app
+      - install -Dm755 -t /app/bin/ target/release/gitbutler-app
      # - install -Dm755 -t /app/share/icons/hicolor/scalable/apps/ gitbutler/public/res/svg/gitbutler.svg
       - install -Dm644 -t /app/share/applications/ com.gitbutler.gitbutler.desktop
