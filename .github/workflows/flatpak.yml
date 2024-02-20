@@ -1,0 +1,18 @@
+on:
+  push:
+    branches: [main]
+name: CI
+jobs:
+  flatpak:
+    name: "Flatpak"
+    runs-on: ubuntu-latest
+    container:
+      image: bilelmoussaoui/flatpak-github-actions:gnome-44
+      options: --privileged
+    steps:
+    - uses: actions/checkout@v4
+    - uses: flatpak/flatpak-github-actions/flatpak-builder@v6
+      with:
+        bundle: gitbutler.flatpak
+        manifest-path: com.gitbutler.gitbutler.yaml
+        cache-key: flatpak-builder-${{ github.sha }}
