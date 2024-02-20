@@ -93,7 +93,7 @@ modules:
   - name: Gitbutler
     sources:
       - type: git
-        url: https://github.com/varbhat.git
+        url: https://github.com/varbhat/gitbutler.git
         commit: 4ee0e448340e7e3a332fa2a08e642ce101393fef
       - type: file
         path: com.gitbutler.gitbutler.desktop
