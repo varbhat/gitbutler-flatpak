@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+
+Name=gitbutler
+Comment= dummy
+Icon=gitbutler
+Exec=gitbutler-app
+Terminal=false
+Categories=Network;
+Keywords=git;
