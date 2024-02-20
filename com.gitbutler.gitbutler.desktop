@@ -1,11 +1,10 @@
 [Desktop Entry]
 Version=1.0
 Type=Application
-
-Name=gitbutler
-Comment= dummy
-Icon=gitbutler
+Name=GitButler
+Comment=A Git client for simultaneous branches on top of your existing workflow
+Icon=com.gitbutler.gitbutler
 Exec=gitbutler-app
 Terminal=false
-Categories=Network;
+Categories=Development;
 Keywords=git;

@@ -2,8 +2,7 @@ id: com.gitbutler.gitbutler
 runtime: org.gnome.Platform
 runtime-version: '44'
 sdk: org.gnome.Sdk
-command: gitbutler
-rename-icon: gitbutler
+command: gitbutler-app
 
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.rust-nightly
@@ -111,5 +110,6 @@ modules:
       - cargo --offline build --release --verbose
      # - install -Dm644 -t /app/share/metainfo/ com.gitbutler.gitbutler.appdata.xml
       - install -Dm755 -t /app/bin/ target/release/gitbutler-app
-     # - install -Dm755 -t /app/share/icons/hicolor/scalable/apps/ gitbutler/public/res/svg/gitbutler.svg
+      - install -Dm 644 icons/32x32.png /app/share/icons/hicolor/64x64/apps/com.gitbutler.gitbutler.png
+      - install -Dm 644 icons/128x128.png /app/share/icons/hicolor/128x128/apps/com.gitbutler.gitbutler.png
       - install -Dm644 -t /app/share/applications/ com.gitbutler.gitbutler.desktop
